@@ -45,14 +45,15 @@
 
             var totale = 0
             if (vect.length > 2) {
-                totale = parseInt(vect[vect.length-1]) + parseInt(vect[vect.length-2]) + parseInt(vect[vect.length-3]) - ((parseInt(vect[vect.length-1]) + parseInt(vect[vect.length-2]) + parseInt(vect[vect.length-3]))*20/100)
+                totale = parseFloat(vect[vect.length-1]) - (parseFloat(vect[vect.length-1]) * parseFloat(0.2)) + parseFloat(vect[vect.length-2]) - (parseFloat(vect[vect.length-2]) * parseFloat(0.2)) + parseFloat(vect[vect.length-3]) - (parseFloat(vect[vect.length-3]) * parseFloat(0.2))
             } else if (vect.length == 2){
-                totale = parseInt(vect[vect.length-1]) + parseInt(vect[vect.length-2]) - ((parseInt(vect[vect.length-1]) + parseInt(vect[vect.length-2]))*20/100)
+                totale = parseFloat(vect[vect.length-1]) - (parseFloat(vect[vect.length-1]) * parseFloat(0.2)) + parseFloat(vect[vect.length-2]) - (parseFloat(vect[vect.length-2]) * parseFloat(0.2))
+                console.log(totale)
             } else if (vect.length == 1){
                 totale = parseInt(vect[vect.length-1])
             }
 
-            document.getElementById("res").innerHTML= totale + "€"
+            document.getElementById("res").innerHTML= parseInt(totale) + "€"
             }
     </script>
     <title>Document</title>
