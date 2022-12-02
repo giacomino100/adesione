@@ -63,13 +63,14 @@
     <div class="container">
         <div class="card" style="width: 25rem; padding: 10px;">
             <div class="card-body">
+                <h3>Calcolo quota adesione famiglie</h3>
                 <table>
                     <form method="post" name="modulo">
-                    <tr><td><b>Adulti</b></td><td><input type="text" name="adulti"></td></tr>
-                    <tr><td><b>Giovani</b></td><td><input type="text" name="giovani"></td></tr>
-                    <tr><td><b>Issimi</b></td><td><input type="text" name="issimi"></td></tr>
-                    <tr><td><b>Acr</b></td><td><input type="text" name="acr"></td></tr>
-                    <tr><td colspan="2" align="right"><input type="button" value="Invia" onClick="Modulo()"></td></tr>
+                    <tr><td><b>Adulti</b></td><td><input type="number" name="adulti"></td></tr>
+                    <tr><td><b>Giovani</b></td><td><input type="number" name="giovani"></td></tr>
+                    <tr><td><b>Issimi</b></td><td><input type="number" name="issimi"></td></tr>
+                    <tr><td><b>Acr</b></td><td><input type="number" name="acr"></td></tr>
+                    <tr><td colspan="2" align="right"><input type="button" value="Calcola" onClick="Modulo()"></td></tr>
                     <tr><td><b>Totale: </b><b id="res"></b></td></tr>
                     </form>
                 </table>
